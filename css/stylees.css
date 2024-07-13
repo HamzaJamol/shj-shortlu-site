@@ -75,7 +75,7 @@ img {
   background-color: var(--accent-color);
   color: #fff;
   font-size: 20px;
-  line-height: 1.5;
+  line-height: normal;
   font-weight: bold;
   text-decoration: none;
   text-align: center;
@@ -94,10 +94,16 @@ img {
 }
 
 
+/* MAIN-CONTENT */
+.main-content {
+  flex-grow: 1;
+}
+
+
 /* SITE-HEADER */
 .site-header {
-  padding-top: 48px;
-  padding-bottom: 48xp;
+  padding-top: 50px;
+  padding-bottom: 50xp;
   background-color: #fff;
   font-weight: bold;
   line-height: normal;
@@ -186,8 +192,7 @@ img {
 }
 
 
-
-
+/* BUTTON */
 .button:hover {
   background-color: var(--accent-color-hover);
 }
@@ -215,11 +220,41 @@ img {
 }
 
 
-/* MAIN-CONTENT */
-.main-content {
-  flex-grow: 1;
+/* HERO */
+.hero {
+  padding-top: 92px;
+  padding-bottom: 222px;
+  background-image: url("../img/working_with_computer.svg");
+  background-repeat: no-repeat;
+  background-position: left calc(50% + 476px) top 30px;
+
 }
 
+.hero__inner {
+  max-width: 565px;
+}
+
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: -2px;
+  color: var(--text-color-dark);
+}
+
+.hero__text {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-size: 22px;
+  line-height: 36px;
+}
+
+.button {
+}
+
+.button--big {
+}
 
 
 /* RETINA BG */
