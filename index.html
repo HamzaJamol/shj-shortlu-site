@@ -7,29 +7,34 @@
 
   <!--Stylesheets -->
   <link rel="stylesheet" href="CSS/normalize.css">
-  <link rel="stylesheet" href="CSS/styles.css">
+  <link rel="stylesheet" href="css/stylees.css">
 </head>
 <body>
 
-  <header class="header">
-    <div class="container">
-      <h2 class="site-logo">Shortly</h2>
-      <nav class="sitenav">
+
+  <!-- SITE-HEADER -->
+  <header class="site-header">
+    <div class="site-header__container container">
+      <!-- LOGO -->
+      <a class="site-header__logo" href="#">
+        <img class="logo__img" src="img/logo-img.svg" alt="Shortly logo" width="120" height="33" srcset="">
+      </a>
+
+      <nav class="site-header__sitenav sitenav">
         <ul class="sitenav__list">
           <li class="sitenav__item"><a class="sitenav__link" href="index.html">Features</a>
           </li>
-          <li class="sitenav__item"><a class="sitenav__link" href="index.html">Features</a>
+          <li class="sitenav__item"><a class="sitenav__link" href="index.html">Pricing</a>
           </li>
-          <li class="sitenav__item"><a class="sitenav__link" href="index.html">Features</a>
+          <li class="sitenav__item"><a class="sitenav__link" href="index.html">Resources</a>
           </li>
         </ul>
-        <div>
-          <a href="#">Login</a>
-        </div>
-        <div>
-          <a href="#">Sugn Up</a>
-        </div>
       </nav>
+
+      <div class="site-header__auth">
+        <a class="site-header__login-link" href="#">Login</a>
+        <a class="button button--small" href="#">Sign Up</a>
+      </div>
     </div>
   </header>
 

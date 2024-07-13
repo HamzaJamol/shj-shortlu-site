@@ -1,7 +1,7 @@
 /* CUSTOM-PROPS */
 :root {
   --text-color: #9e9aa8;
-  --heading-color: #34313d;
+  --text-color-dark: #34313d;
   --accent-color: #2bd0d0;
   --accent-color-hover: #9ae3e3;
   --light-bg: #eff1f7;
@@ -11,10 +11,12 @@
   --color-light-ink: #4b3f6b;
 }
 
+
+/* FONT-FACE */
 @font-face {
   font-family: "Poppins";
   src: url("Poppins-Medium.woff2") format("woff2"),
-      url("Poppins-Medium.woff") format("woff");
+  url("Poppins-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -23,7 +25,7 @@
 @font-face {
   font-family: "Poppins";
   src: url("Poppins-Bold.woff2") format("woff2"),
-      url("Poppins-Bold.woff") format("woff");
+  url("Poppins-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -64,6 +66,23 @@ img {
 }
 
 
+/* BUTTON */
+.button {
+  display: inline-block;
+  padding: 14px 40px 12px;
+  margin: 0;
+  border-radius: 28px;
+  background-color: var(--accent-color);
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+
 /* CONTAINER */
 .container {
   width: 100%;
@@ -75,7 +94,138 @@ img {
 }
 
 
+/* SITE-HEADER */
+.site-header {
+  padding-top: 48px;
+  padding-bottom: 48xp;
+  background-color: #fff;
+  font-weight: bold;
+  line-height: normal;
+}
+
+.site-header__container {
+  display: flex;
+  align-items: center;
+}
+
+.site-header__logo {
+  min-height: 45px;
+}
+
+
+/* LOGO */
+.site-header__logo {
+  display: inline-block;
+  margin-right: 45px;
+}
+
+.site-header__logo:hover {
+  opacity: 0.8;
+}
+
+.site-header__logo:active {
+  opacity: 0.6
+}
+
+.logo__img {
+  display: block;
+  width: 120px;
+  height: 33px;
+  object-fit: contain;
+}
+
+
+/* SITENAV */
+.site-header__sitenav {
+  margin-right: auto;
+}
+
+.sitenav__list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.sitenav__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.sitenav__link {
+  display: block;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.sitenav__link:hover {
+  color: var(--text-color-dark);
+}
+
+.sitenav__link:active {
+  opacity: 0.6;
+}
+
+.site-header__auth {
+  display: flex;
+  align-items: center;
+  margin-left: 45px;
+}
+
+.site-header__login-link {
+  color: var(--text-color);
+  text-decoration: none;
+  margin-right: 37px;
+}
+
+.site-header__login-link:hover {
+  color: var(--text-color-dark);
+}
+
+.site-header__login-link:active {
+  opacity: 0.6;
+}
+
+
+
+
+.button:hover {
+  background-color: var(--accent-color-hover);
+}
+
+.button:active {
+  opacity: 0.6;
+}
+
+.button--small {
+  padding: 8px 24px;
+  font-size: 15px;
+  line-height: 22.5px;
+}
+
+.button--big {
+  padding: 18px 40px 16px ;
+}
+
+.button--rectangle {
+  border-radius: 5px;
+}
+
+.button--rectangle-big {
+  border-radius: 10px;
+}
+
+
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
+}
+
+
+
+/* RETINA BG */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and ( min-resolution: 192dpi),
+only screen and ( min-resolution: 2dppx) {
+
 }
