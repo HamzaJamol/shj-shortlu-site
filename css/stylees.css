@@ -46,6 +46,7 @@ html {
   box-sizing: inherit;
 }
 
+/* BODY */
 body {
   display: flex;
   flex-direction: column;
@@ -66,6 +67,15 @@ img {
 }
 
 
+/* PLACEHOLDER-STYLES */
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder,
+:-moz-placeholder{
+  color: rgba(255, 192, 203, 0.5);
+  opacity: 1;
+}
+
 /* BUTTON */
 .button {
   display: inline-block;
@@ -80,6 +90,20 @@ img {
   text-decoration: none;
   text-align: center;
   cursor: pointer;
+  white-space: nowrap;
+}
+
+
+/* VISUALLY-HIDDEN */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 
@@ -254,6 +278,82 @@ img {
 }
 
 .button--big {
+}
+
+/* INDEX-URL-SHORTENER-FEATURES-WRAPPER */
+.index-url-shortener-features-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--light-bg);
+}
+
+.index-url-shortener-features-wrapper__url-shortener {
+  margin-top: -84px;
+}
+
+
+/* URL-SHORTENER */
+.url-shortener__form {
+  display: flex;
+  padding: 48px 64px;
+  border-radius: 10px;
+  background-color: #4b3f6b;
+  background-image: url(..//img/purple-bg.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.url-shortener__input-wrapper {
+  position: relative;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  margin-right: 24px;
+}
+
+.url-shortener__input {
+  flex-grow: 1;
+  display: block;
+  width: 100%;
+  padding: 14px 32px;
+  border: 3px solid transparent;
+  border-radius: 10px;
+  color: var(--text-color-dark);
+  font-size: 20px;
+  line-height: 36px;
+}
+
+
+.input:not(:placeholder-shown):invalid {
+  border-color: var(--erorr-color);
+  color: var(--erorr-color);
+}
+
+
+.url-shortener__error-msg {
+  display: none;
+}
+
+.input:not(:placeholder-shown):invalid ~ .url-shortener__error-msg {
+  display: block;
+  position: absolute;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  font-style: italic;
+  color: var(--erorr-color);
+  letter-spacing: 0.11px;
+}
+
+
+.url-shortener__submit {
+}
+
+.button {
+}
+
+.button--rectangle-big {
 }
 
 
