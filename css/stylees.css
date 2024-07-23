@@ -455,6 +455,8 @@ img {
   margin-top: 88px;
 }
 
+
+/* INDEX-FEATURE */
 .index-feature {
   position: relative;
   padding: 77px 32px 40px;
@@ -477,9 +479,11 @@ img {
 
 .index-features__title {
   margin-top: 0;
+  margin-bottom: 12px;
   font-size: 22px;
   line-height: normal;
   color: var(--text-color-dark);
+  text-transform: capitalize;
 }
 
 .index-feature__info {
